@@ -6,5 +6,5 @@ const thanks=document.getElementById('thanks');
 heading.style.color='orange';
 header.style.backgroundColor='green'
 header.style.borderBottom='orange';
-basketHeading.style.color='green';
+basketHeading.style.color='darkgreen';
 thanks.innerHTML='<p>Please visit us again</p>'
