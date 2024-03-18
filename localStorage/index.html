@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body style="margin: 0">
+  <!-- Write your code below -->
+   <form onsubmit="saveToLoacalStorage(event)">
+    <label>Username</label>
+    <input type="text" name="username" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Phone</label>
+    <input type="tel" name="phone">
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function saveToLoacalStorage(event){
+        event.preventDefault();
+        const name=event.target.username.value;
+        const email=event.target.email.value;
+        const phone=event.target.phone.value;
+        localStorage.setItem('name',name);
+        localStorage.setItem('email',email);
+        localStorage.setItem('phone',phone);
+    }
+  </script>
+</body>
+<script src="index.js"></script>
+
+</html>
